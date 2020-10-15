@@ -1,0 +1,85 @@
+body{
+    background: palevioletred;
+}
+.menu{
+    width: 600px;
+    position: absolute;
+}
+.menu ul{
+    list-style: none;
+}
+.menu ul li{
+    background: cyan;
+    border: 1px dotted purple;
+    display: block;
+    float: left;
+    font: bold 12px arial;
+    height: 40px;
+    line-height: 40px;
+    overflow: hidden;
+    padding-left: 15px;
+    position: absolute;
+    width: 135px;
+    z-index: 10000;
+    box-shadow: 2px 5px red ;
+    background: linear-gradient(top, yellow 15%, blue 5%, orange 50%)
+}
+.menu ul li:hover{
+    background: linear-gradient(top, darkred 10%, green 5%, orangered 60%)
+}
+.menu ul li:first child{
+    border-radius: 5px 0 0 5px;
+}
+.menu ul li:last child{
+    border-radius: 0 5px 5px 0;
+}
+.menu ul li#b{
+    margin-left: 150px;
+}
+.menu ul li#c{
+    margin-left: 300px;
+}
+ .menu ul li a{
+     display: block;
+     text-decoration: none;
+     color: saddlebrown;
+ }
+.menu ul li div{
+    text-align: left;
+    font: normal 11px arial;
+    line-height: 19px;
+    margin: 10px o;
+}
+.menu ul li div a{
+    display: inline;
+
+}
+.menu ul  li div a:hover{
+    text-decoration: underline;
+
+}
+.menu ul li div hr{
+    border: none;
+    border-top: 1px dotted slateblue;
+    margin: 5px 0;
+    width: 50px;
+
+}
+.menu ul li:hover:target{
+    display: inherit;
+    padding: 0;
+    height: 155px;
+    width: 220px;
+    padding-left: 20px;
+    opacity: 90;
+    transition: height 0.5s ease-in;
+}
+.menu ul li#a:hover:target{
+    background: purple;
+}
+.menu ul li#b:hover:target{
+    background: green;
+}
+.menu ul li#c:hover:target{
+    background: darkorange;
+}
